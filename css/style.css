@@ -1,0 +1,225 @@
+/* Global styles */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 0.875rem;
+  color: #fff;
+  line-height: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Main content styles */
+#main-content {
+  background: url("/img/bg-curvy-desktop.svg") no-repeat;
+  background-position: center bottom;
+  background-color: #1b2330;
+}
+
+#main-content .header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 88%;
+  margin: auto;
+  padding-top: 4.5rem;
+}
+
+#main-content .header-container ul {
+  list-style: none;
+}
+
+#main-content .header-container li {
+  display: inline-block;
+  margin-right: 45px;
+}
+
+#main-content .header-container li a {
+  color: #ccc;
+  font-size: 1rem;
+  transition: color 300ms ease;
+}
+
+#main-content .header-container li a:hover {
+  color: #fff;
+}
+
+/* Main container styles */
+#main-content .main-container {
+  max-width: 60%;
+  margin: auto;
+  padding: 5rem 0 8rem;
+}
+
+#main-content .main-container .main-content-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#main-content .main-container .main-content-text h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  line-height: 4rem;
+  text-align: center;
+  padding-top: 25px;
+}
+
+#main-content .main-container .main-content-text p {
+  font-size: 1.25rem;
+  line-height: 1.9rem;
+  padding: 2rem 5rem 0rem;
+  text-align: center;
+}
+
+#main-content .main-container .main-content-text a {
+  margin-top: 2rem;
+  padding: 1rem 6rem;
+  border: 1px solid hsl(176, 68%, 64%);
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  border-radius: 40px;
+  color: #fff;
+  font-size: 18px;
+}
+
+#main-content .main-container .main-content-text a:hover {
+  background: linear-gradient(to left, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  border-color: hsl(198, 60%, 50%);
+}
+
+/* Features styles */
+#features {
+  background: hsl(218, 28%, 13%);
+  margin-top: -1rem;
+  padding: 0 0 6rem;
+}
+
+#features .features-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+}
+
+#features .features-container .features-row {
+  padding: 0rem 3rem;
+  width: 90%;
+}
+
+#features .features-container .features-box {
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+#features .features-container .features-box img {
+  padding-bottom: 1rem;
+}
+
+#features .features-container .features-box h2 {
+  font-family: "Raleway", sans-serif;
+  padding-bottom: 1rem;
+}
+
+/* Productive styles */
+#stay-productive {
+  background: hsl(218, 28%, 13%);
+  padding-bottom: 8rem;
+  margin-top: -3rem;
+}
+
+#stay-productive .stay-productive-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+#stay-productive .stay-productive-container .productive-image {
+  flex: 1;
+  padding-right: 3.5rem;
+}
+
+#stay-productive .stay-productive-container .productive-text {
+  flex: 1;
+}
+
+#stay-productive .stay-productive-container .productive-text h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  line-height: 3rem;
+  padding-bottom: 1rem;
+  padding-right: 8rem;
+}
+
+#stay-productive .stay-productive-container .productive-text p {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 7rem;
+}
+
+#stay-productive .stay-productive-container .productive-text a {
+  color: hsl(176, 68%, 64%);
+  transition: border 400ms ease;
+}
+
+#stay-productive .stay-productive-container .productive-text a:hover {
+  border-bottom: 1.5px solid hsl(176, 68%, 64%);
+  padding-bottom: 3px;
+}
+
+/* Testimonials styles */
+#testimonials {
+  background: hsl(218, 28%, 13%);
+  padding-bottom: 8rem;
+}
+
+#testimonials img {
+  padding-left: 100px;
+}
+
+#testimonials .testimonials-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+#testimonials .testimonials-container .testimonial-box {
+  background: hsl(219, 30%, 18%);
+  margin: 0rem 2rem;
+  padding: 1rem 1.5rem;
+  box-shadow: 5px 8px rgba(32, 42, 60, 0.3);
+}
+
+#testimonials .testimonials-container .testimonial-box .testimonial-profile {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+}
+
+#testimonials
+  .testimonials-container
+  .testimonial-box
+  .testimonial-profile
+  img {
+  border: 1px solid hsl(219, 30%, 18%);
+  border-radius: 50px;
+}
