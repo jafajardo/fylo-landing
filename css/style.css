@@ -185,11 +185,11 @@ a {
 /* Testimonials styles */
 #testimonials {
   background: hsl(218, 28%, 13%);
-  padding-bottom: 8rem;
+  padding-bottom: 15rem;
 }
 
-#testimonials img {
-  padding-left: 100px;
+#testimonials .double-quotes {
+  padding-left: 9rem;
 }
 
 #testimonials .testimonials-container {
@@ -202,10 +202,18 @@ a {
 }
 
 #testimonials .testimonials-container .testimonial-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
   background: hsl(219, 30%, 18%);
   margin: 0rem 2rem;
   padding: 1rem 1.5rem;
   box-shadow: 5px 8px rgba(32, 42, 60, 0.3);
+}
+
+#testimonials .testimonials-container .testimonial-box .testimonial-text {
+  padding-bottom: 1rem;
 }
 
 #testimonials .testimonials-container .testimonial-box .testimonial-profile {
@@ -221,5 +229,199 @@ a {
   .testimonial-profile
   img {
   border: 1px solid hsl(219, 30%, 18%);
-  border-radius: 50px;
+  border-radius: 25px;
+  height: 40px;
+  margin-right: 1rem;
+}
+
+/* Sign up styles */
+#sign-up {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background: hsl(218, 28%, 13%);
+}
+
+#sign-up .sign-up-wrapper {
+  position: absolute;
+  top: -8rem;
+  width: 55%;
+  background: hsl(218, 28%, 13%);
+  border: 1px solid hsl(219, 30%, 18%);
+  box-shadow: 3px 6px 7px rgba(0, 0, 0, 0.5), -1px -1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#sign-up .sign-up-wrapper .sign-up-container {
+  width: 85%;
+  margin: auto;
+  padding: 2.5rem 2rem 2rem 2rem;
+}
+
+#sign-up .sign-up-wrapper .sign-up-container .sign-up-text {
+  font-size: 16px;
+  text-align: center;
+}
+
+#sign-up .sign-up-wrapper .sign-up-container .sign-up-text h2 {
+  padding-bottom: 1rem;
+}
+
+#sign-up .sign-up-wrapper .sign-up-container .sign-up-text p {
+  padding-bottom: 1rem;
+  font-size: 14px;
+}
+
+#sign-up .sign-up-wrapper .sign-up-container .sign-up-form form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#sign-up .sign-up-wrapper .sign-up-container .sign-up-form .sign-up-txt {
+  width: 70%;
+  padding-right: 1rem;
+}
+
+#sign-up .sign-up-wrapper .sign-up-container .sign-up-form .sign-up-txt input {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  width: 100%;
+  outline: none;
+}
+
+#sign-up .sign-up-wrapper .sign-up-container .sign-up-form .sign-up-btn {
+  width: 32%;
+}
+
+#sign-up .sign-up-wrapper .sign-up-container .sign-up-form .sign-up-btn .btn {
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid hsl(176, 68%, 64%);
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  border-radius: 20px;
+  width: 100%;
+  outline: none;
+  cursor: pointer;
+}
+
+#sign-up
+  .sign-up-wrapper
+  .sign-up-container
+  .sign-up-form
+  .sign-up-btn
+  .btn:hover {
+  background: linear-gradient(to left, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  border-color: hsl(198, 60%, 50%);
+}
+
+/* Footer styles */
+#footer {
+  background: hsl(216, 53%, 9%);
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+#footer .footer-container {
+  width: 90%;
+  margin: auto;
+}
+
+#footer .footer-container .footer-logo {
+  padding-bottom: 2rem;
+}
+
+#footer .footer-container .footer-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.footer-contents .footer-location {
+  display: flex;
+  flex-direction: row;
+  flex: 0;
+}
+
+.footer-contents .footer-location .footer-location-icon {
+  padding-right: 1rem;
+}
+
+.footer-contents .footer-location .footer-location-text {
+  width: 20vw;
+}
+
+.footer-contents .footer-contacts .footer-phone,
+.footer-contents .footer-contacts .footer-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.footer-contents .footer-contacts .footer-phone .footer-phone-icon,
+.footer-contents .footer-contacts .footer-email .footer-email-icon {
+  padding-right: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer-links ul {
+  list-style: none;
+}
+
+.footer-links li {
+  padding-bottom: 1rem;
+}
+
+.footer-links li a {
+  color: #ccc;
+  transition: color 300ms ease;
+}
+
+.footer-links li a:hover {
+  color: #fff;
+}
+
+.footer-links .footer-links-left {
+  padding-right: 6rem;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-social i {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  transition: color 300ms ease;
+}
+
+.footer-social i:hover {
+  color: hsl(176, 68%, 64%);
+}
+
+.footer-social .footer-social-facebook i {
+  padding: 0.5rem 0.65rem;
+}
+
+.footer-social .footer-social-twitter i {
+  padding: 0.5rem 0.55rem;
+}
+
+.footer-social .footer-social-instagram i {
+  padding: 0.5rem 0.55rem;
+}
+
+.footer-social div {
+  padding-right: 1rem;
 }
